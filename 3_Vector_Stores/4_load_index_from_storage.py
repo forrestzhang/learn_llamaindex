@@ -13,17 +13,8 @@ Settings.llm = Ollama(model="llama3")
 Settings.embed_model = HuggingFaceEmbedding("BAAI/bge-base-en-v1.5")
 
 client = qdrant_client.QdrantClient(
-    # you can use :memory: mode for fast and light-weight experiments,
-    # it does not require to have Qdrant deployed anywhere
-    # but requires qdrant-client >= 1.1.1
-    # location=":memory:"
-    # otherwise set Qdrant instance address with:
-    # url="http://<host>:<port>"
-    # otherwise set Qdrant instance with host and port:
     host="localhost",
     port=6333
-    # set API KEY for Qdrant Cloud
-    # api_key="<qdrant-api-key>",
 )
 
 vector_store = QdrantVectorStore(client=client, collection_name="pubmed_demo")
