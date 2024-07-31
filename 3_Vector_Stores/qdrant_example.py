@@ -59,3 +59,10 @@ print(response)
 pip install -U qdrant_client 
 pip install llama-index-vector-stores-qdrant llama-index-readers-file
 """
+
+"""
+# run Qdrant server
+docker run -p 6333:6333 -p 6334:6334 \
+    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
+    qdrant/qdrant
+"""
