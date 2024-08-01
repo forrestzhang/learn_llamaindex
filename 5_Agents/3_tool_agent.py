@@ -10,6 +10,7 @@ from llama_index.tools.duckduckgo import DuckDuckGoSearchToolSpec
 """
 pip install llama-index-tools-yahoo-finance
 pip install llama-index-tools-wikipedia 
+pip install llama-index-tools-duckduckgo    
 """
 Settings.llm = Ollama(model="llama3.1")
 
