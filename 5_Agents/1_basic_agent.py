@@ -3,6 +3,11 @@ from llama_index.core import Settings
 from llama_index.core.tools import FunctionTool
 from llama_index.llms.ollama import Ollama
 
+"""
+Use FunctionTool to create tools for adding and multiplying numbers. 
+Those tools will be used by the ReActAgent to solve the math problem.
+"""
+
 Settings.llm = Ollama(model="llama3")
 
 def multiply(a: float, b: float) -> float:
