@@ -36,22 +36,22 @@ finance_tools.extend([multiply_tool, add_tool])
 yahoo_fiance_agent = ReActAgent.from_tools(finance_tools, verbose=False, max_iterations=100)
 
 response = yahoo_fiance_agent.chat("What is the current price of NVDA?")
-print("Q: What is the current price of NVDA?")
+print("Q: What is the current price of NVDA? Response shotened for brevity.")
 
 print(response)
 
 # Wikipedia tool
-print("\n\n----------------------Wikipedia Tool----------------------")
+print("\n\n----------------------Wikipedia  Tool---------------------------")
 wiki_tools = WikipediaToolSpec().to_tool_list()
 wiki_agent = ReActAgent.from_tools(wiki_tools, verbose=False, max_iterations=100)
 
 response = wiki_agent.chat("What is the capital of France?")
-print("Q: What is the capital of France?")
+print("Q: What is the capital of France? Response shotened for brevity.")
 print(response)
 
 
 # DuckDuckGo Search tool
-print("\n\n----------------------DuckDuckGo Search Tool----------------------")
+print("\n\n---------------------DuckDuckGo Search Tool----------------------")
 search_tools = DuckDuckGoSearchToolSpec().to_tool_list()
 search_agent = ReActAgent.from_tools(search_tools, verbose=False, max_iterations=100)
 
