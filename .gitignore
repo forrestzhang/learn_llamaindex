@@ -161,4 +161,4 @@ cython_debug/
 .idea/
 
 /4_RAG/db/
-/data/storage/
+data/storage/
