@@ -12,10 +12,10 @@ import os
 import nest_asyncio 
 nest_asyncio.apply()
 
-llm = Ollama(model="qwen2.5") # qwen2.5 is good for this task
+llm = Ollama(model="qwen2.5:14b") # qwen2.5 is good for this task
 # llm = Ollama(model="mistral-small", request_timeout=300)
 
-embed_model = OllamaEmbedding("nomic-embed-text:latest")
+embed_model = OllamaEmbedding("bge-large:latest")
 # embed_model = HuggingFaceEmbedding("BAAI/bge-base-en-v1.5")
 
 Settings.llm = llm
