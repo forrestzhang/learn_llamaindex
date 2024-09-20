@@ -12,7 +12,7 @@ Use FunctionTool to create tools for adding and multiplying numbers.
 Those tools will be used by the ReActAgent to solve the math problem related with 2023 canadian budget.
 """
 
-Settings.llm = Ollama(model="llama3") # for this project glm4 is better than llama3
+Settings.llm = Ollama(model="llama3.1") # for this project glm4 is better than llama3
 
 # Settings.embed_model = HuggingFaceEmbedding("BAAI/bge-base-en-v1.5")
 Settings.embed_model = OllamaEmbedding("nomic-embed-text:latest")
