@@ -10,7 +10,7 @@ from llama_index.vector_stores.qdrant import QdrantVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
-Settings.llm = Ollama(model="llama3")
+Settings.llm = Ollama(model="qwen2.5")
 Settings.embed_model = HuggingFaceEmbedding("BAAI/bge-base-en-v1.5")
 
 
