@@ -162,3 +162,5 @@ cython_debug/
 
 /4_RAG/db/
 data/storage/
+.env
+.DS_Store
